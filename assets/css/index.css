@@ -4,16 +4,17 @@
         box-sizing: border-box;
     }
     
-    .navbar {
+    .full-page {
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), url(../images/food.png));
+        /*background-image: url(../images/food.png);
+        */
         background-position: center;
         background-size: cover;
         position: absolute;
     }
     
-    .navigation_bar {
+    .navbar {
         display: flex;
         align-items: center;
         padding: 20px;
@@ -25,12 +26,6 @@
     nav {
         flex: 1;
         text-align: right;
-    }
-    
-    nav h2 {
-        display: inline-block;
-        margin-right: 60px;
-        padding-right: 250px;
     }
     
     nav ul {
@@ -51,7 +46,7 @@
     
     nav ul li button {
         font-size: 20px;
-        color: rgb(24, 22, 22);
+        color: pink;
         outline: none;
         border: none;
         background: transparent;
@@ -72,7 +67,7 @@
         font-size: 28px;
     }
     
-    .login-form {
+    #login-form {
         display: none;
     }
     
@@ -103,21 +98,32 @@
         position: relative;
     }
     
-    .login_field {
+    #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: #F3C693;
+        border-radius: 30px;
+        transition: .5s;
+    }
+    
+    .input-group-login {
         top: 150px;
         position: absolute;
         width: 280px;
         transition: .5s;
     }
     
-    .sign {
+    .input-group-register {
         top: 120px;
         position: absolute;
         width: 280px;
         transition: .5s;
     }
     
-    .sign_field {
+    .input-field {
         width: 100%;
         padding: 10px 0;
         margin: 5px 0;
@@ -129,7 +135,7 @@
         background: transparent;
     }
     
-    .submit_btn {
+    .submit-btn {
         padding: 10px 30px;
         width: 85%;
         cursor: pointer;
@@ -144,7 +150,7 @@
         margin: 30px 10px 34px 0;
     }
     
-    span {
+    #login span {
         color: #777;
         font-size: 12px;
         bottom: 68px;
@@ -158,6 +164,10 @@
     #login input {
         color: white;
         font-size: 15;
+    }
+    
+    #register {
+        left: 450px;
     }
     
     #sign-up {
