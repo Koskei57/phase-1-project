@@ -7,7 +7,7 @@
     .navbar {
         height: 100%;
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 4), rgba(0, 0, 0, 4), url());
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), url(../images/food.png));
         background-position: center;
         background-size: cover;
         position: absolute;
@@ -70,4 +70,101 @@
         text-decoration: none;
         color: palevioletred;
         font-size: 28px;
+    }
+    
+    .login-form {
+        display: none;
+    }
+    
+    .form-box {
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 2% auto;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    .button-box {
+        width: 200px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #fff555;
+        border-radius: 30px;
+    }
+    
+    .toggle-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent border;
+        outline: none;
+        border: 0;
+        position: relative;
+    }
+    
+    .login_field {
+        top: 150px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+    
+    .sign {
+        top: 120px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+    
+    .sign_field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+    }
+    
+    .submit_btn {
+        padding: 10px 30px;
+        width: 85%;
+        cursor: pointer;
+        display: block;
+        background: #F3C693;
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+    
+    .checkbox {
+        margin: 30px 10px 34px 0;
+    }
+    
+    span {
+        color: #777;
+        font-size: 12px;
+        bottom: 68px;
+        position: absolute;
+    }
+    
+    #login {
+        left: 50px;
+    }
+    
+    #login input {
+        color: white;
+        font-size: 15;
+    }
+    
+    #sign-up {
+        left: 450px;
+    }
+    
+    #sign-up input {
+        color: white;
+        font-size: 15;
     }
