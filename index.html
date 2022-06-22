@@ -13,42 +13,42 @@
 
 <body>
     <!--Navigation bar-->
-    <section class="navbar">
-        <div class="navigation_bar">
+    <section class="full-page">
+        <div class="navbar">
+            <a href="#">MyFood</a>
             <nav>
-                <h2>My<span>Food</span></h2>
-                <ul class="navigate">
+                <ul id="Menuitems">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li>
-                        <button class="login-btn" onclick="document.getElementById('login-form').style.display='block' " style="width:auto;">Login</button></li>
+                    <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block' " style="width:auto;">Login</button></li>
                 </ul>
-
             </nav>
         </div>
-        <div class="login-form">
+
+        <div id="login-form" class="login-page">
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
-                    <button type="button" onclick="Sign_Up()" class="toggle-btn">Sign Up</button>
+                    <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
                 </div>
-                <form action="" id="login">
-                    <input type="text" class="login_field" placeholder="Enter your email">
-                    <input type="password" class="login_field" placeholder="Enter password" required>
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Enter your email">
+                    <input type="password" class="input-field" placeholder="Enter password" required>
                     <input type="checkbox" class="checkbox"><span>Remember Password</span>
-                    <button type="submit" class="submit_btn">Log In</button>
+                    <button type="submit" class="submit-btn">Log in</button>
                 </form>
-                <form action="" id="sign-up" class="sign">
-                    <input type="text" class="sign_field" placeholder="Full Name" required>
-                    <input type="text" class="sign_field" placeholder="User Name" required>
-                    <input type="email" class="sign_field" placeholder="Enter your email" required>
-                    <input type="password" class=" sign_field " placeholder="Enter Password " required>
-                    <input type="password " class="sign_field " placeholder="Confirm Password " required>
-                    <button type="submit" class="submit_btn">Sign Up</button>
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="Full Name" required>
+                    <input type="text" class="input-field" placeholder="User Name" required>
+                    <input type="email" class="input-field" placeholder="Enter your email" required>
+                    <input type="password" class=" input-field " placeholder="Enter Password " required>
+                    <input type="password " class="input-field " placeholder="Confirm Password " required>
+                    <button type="submit" class="submit-btn">Register</button>
                 </form>
             </div>
+        </div>
         </div>
     </section>
     <!--About section-->
