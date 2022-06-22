@@ -1,15 +1,15 @@
-const login = document.getElementById('login');
-const sign = document.getElementById('sign');
+const log = document.getElementById('login');
+const sign = document.getElementById('register');
 const btn = document.getElementById('btn');
 
-function Sign_Up() {
-    login.style.left = '-400px';
+function register() {
+    log.style.left = '-400px';
     sign.style.left = '50px';
     btn.style.left = '110px';
 }
 
 function login() {
-    login.style.left = '50px';
+    log.style.left = '50px';
     sign.style.left = '450px';
     btn.style.left = '0px';
 }
