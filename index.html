@@ -18,9 +18,9 @@
             <a href="#">MyFood</a>
             <nav>
                 <ul id="Menuitems">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
                     <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block' " style="width:auto;">Login</button></li>
                 </ul>
             </nav>
@@ -54,9 +54,38 @@
     <!--About section-->
     <section>
         <div class="about ">
-
+            <div class="about-pic">
+                <img id="pic1" src="./assets/images/about1.jpg" alt="MyFood picture">
+            </div>
+            <div class="about-para">
+            </div>
         </div>
     </section>
+    <div class="services">
+        <div class="serve">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <section class="Footer">
+        <div class="contact">
+            <h1>Newsletter</h1>
+            <p>Hello there subscribe to our Newsletter to receive our<br> promo codes and new flavours.</p>
+            <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="contact">
+            <h1>Contact us on</h1>
+            <div class="icons">
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-facebook" id="facebook"></i>
+                <i class="fa-brands fa-twitter-square " id="twitter"></i>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
