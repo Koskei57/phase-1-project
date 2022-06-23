@@ -19,3 +19,15 @@ window.onclick = function(e) {
         modal.style.display = "none";
     }
 }
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '27495d7b91msh541a131b405839cp1d9107jsnffde60fd2e9c',
+        'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
+    }
+};
+
+fetch('https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=apple', options)
+    .then(response => console.log(response.json()))
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
