@@ -22,12 +22,17 @@ window.onclick = function(e) {
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '27495d7b91msh541a131b405839cp1d9107jsnffde60fd2e9c',
+        'X-RapidAPI-Key': '1f25fd9b01msh9807a83f2f44c15p15acf3jsn4313fbbc6498',
         'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
     }
 };
 
-fetch('https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=apple', options)
-    .then(response => console.log(response.json()))
+fetch('https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=beef', options)
+    .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
+
+function getFood(food) {
+    let foods = document.createElement('li')
+    foods
+}
