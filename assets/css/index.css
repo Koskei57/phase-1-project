@@ -193,11 +193,16 @@
       margin-right: 50px;
   }
   
-  img {
+  .about img {
       margin-top: 90px;
       max-width: 300px;
       max-height: 250px;
       margin-left: 60px;
+  }
+  
+  #about-pic p {
+      align-items: center;
+      list-style-type: none;
   }
   
   .Footer {
