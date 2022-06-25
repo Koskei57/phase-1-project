@@ -4,7 +4,14 @@ const btn = document.getElementById('btn');
 const food = document.getElementById('about-pic');
 const image = document.getElementById('pic1');
 const price = document.getElementById('butn');
-//style the login button
+
+document.addEventListener('DOMContentLoaded', (e) => {
+        document.addEventListener('submit', e => {
+            e.preventDefault()
+            getFood(e.target)
+        })
+    })
+    //style the login button
 function register() {
     log.style.left = '-400px';
     sign.style.left = '50px';
