@@ -1,7 +1,10 @@
 const log = document.getElementById('login');
 const sign = document.getElementById('register');
 const btn = document.getElementById('btn');
-
+const food = document.getElementById('about-pic');
+const image = document.getElementById('pic1');
+const price = document.getElementById('butn');
+//style the login button
 function register() {
     log.style.left = '-400px';
     sign.style.left = '50px';
@@ -15,24 +18,48 @@ function login() {
 }
 const modal = document.getElementById('login-form');
 window.onclick = function(e) {
-    if (e.target == modal) {
-        modal.style.display = "none";
+        if (e.target == modal) {
+            modal.style.display = "none";
+        }
     }
-}
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '1f25fd9b01msh9807a83f2f44c15p15acf3jsn4313fbbc6498',
-        'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
-    }
-};
-
-fetch('https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=beef', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+    //styling login button end here
 
 function getFood(food) {
-    let foods = document.createElement('li')
-    foods
+    let meal = document.createElement('li')
+    meal.className = 'food'
+    meal.innerHTML = `
+<img src="${food.strCategoryThumb}"/>
+<div class="meals">
+<h4>${food.strCategory}</h4>
+<p>${food.strCategoryDescription}</p>
+</div>
+<div class="buttons">
+<button>Order $10</button>
+</div>
+`
+    document.querySelector('#meal-list').appendChild(meal)
+}
+
+function getAllFood() {
+    fetch(' https://www.themealdb.com/api/json/v1/1/categories.php')
+        .then(response => response.json())
+        .then(data => { return getFood(data.food) })
+        //.catch(err => console.error(err));
+}
+
+function initialize() {
+    getAllFood()
+}
+initialize()
+
+function orderNow() {
+    let order = document.getElementById()
+    let get = document.querySelector()
+    get.addEventListener('click', function(event) {
+        event.preventDefault();
+        let card = document.getElementById('')
+        card.innerHTML = "Your order has been received"
+        get.reset();
+    })
+
 }
