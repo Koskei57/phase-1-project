@@ -48,7 +48,7 @@ function getFood(food) {
 }
 
 function getAllFood() {
-    fetch(' http://localhost:3000/foodData')
+    fetch("https://koskei57.github.io/server/db.json")
         .then(response => response.json())
         .then(foodData => foodData.forEach(food => getFood(food)))
         .catch(err => console.error(err));
