@@ -41,10 +41,10 @@ function getFood(food) {
 }
 
 function getAllFood() {
-    fetch(' https://www.themealdb.com/api/json/v1/1/categories.php')
+    fetch(' http://localhost:3000/foodData')
         .then(response => response.json())
-        .then(data => { return getFood(data.food) })
-        //.catch(err => console.error(err));
+        .then(foodData => foodData.forEach(food => getFood(food)))
+        .catch(err => console.error(err));
 }
 
 function initialize() {
