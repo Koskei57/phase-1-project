@@ -188,19 +188,20 @@
   .about {
       display: flex;
       width: 100%;
-      height: 90%;
+      height: 100%;
       padding-top: 550px;
       border: 1px solid gray;
       box-shadow: 5px, 5px, 5px, black;
   }
   
   .about h1 {
-      display: flex;
+      display: grid;
+      gap: 20px;
       justify-content: center;
       align-items: center;
       position: relative;
-      left: 500px;
-      bottom: 350px;
+      left: 600px;
+      bottom: 370px;
   }
   
   #meal-list {
@@ -225,6 +226,7 @@
       color: white;
       border-radius: 8px;
       border-width: 2px;
+      cursor: pointer;
   }
   
   .Footer {
