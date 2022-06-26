@@ -35,13 +35,12 @@ function getFood(food) {
     let meal = document.createElement('li')
     meal.className = 'food'
     meal.innerHTML = `
-<img src="${food.strCategoryThumb}"/>
+
 <div class="meals">
+<img src="${food.strCategoryThumb}"/>
 <h4>${food.strCategory}</h4>
 <p>${food.strCategoryDescription}</p>
-</div>
-<div class="buttons">
-<button>Order $10</button>
+<button id="btn1">Order $10</button>
 </div>
 `
     document.querySelector('#meal-list').appendChild(meal)
