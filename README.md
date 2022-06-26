@@ -15,7 +15,7 @@ As a user of the application,you will be able to:
 * Access to a computer or a mobile phone.
 
 ## live-link
-link=
+link = https://koskei57.github.io/phase-1-project/
 
  ## Installation
 For one to use the website, you will have to git clone the repository link into your visual code and run the html file.
@@ -25,6 +25,7 @@ GIT CLONE:git@github.com:Koskei57/phase-1-project.git
 ## Technology-Used
 * Html and Cascading style sheet were employed during the structuring and styling of the web page. 
 * Javascript language to program the beahaviour of our website.
+* Json server file used to store sample data for our website.
 
 ## License
 Copyright (c) [2022] [Dennis Cheruiyot] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
