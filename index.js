@@ -40,7 +40,7 @@ function getFood(food) {
 <img src="${food.strCategoryThumb}"/>
 <h4>${food.strCategory}</h4>
 <p>${food.strCategoryDescription}</p>
-<button id="btn1">Order $10</button>
+<button id="btn1">Order</button>
 </div>
 `
     document.querySelector('#meal-list').appendChild(meal)
