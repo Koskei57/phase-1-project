@@ -3,7 +3,8 @@ This is the name of the website.
 
 ## Description
 This website enables customers to  order food at the comfort of their zone.
-
+## Screenshot
+![myFood](./assets/images/myfood.png)
 ## Features
 As a user of the application,you will be able to:
  * Make enquiry through contact us link .
