@@ -40,7 +40,7 @@ function getFood(food) {
 <img src="${food.strCategoryThumb}"/>
 <h4>${food.strCategory}</h4>
 <p>${food.strCategoryDescription}</p>
-<button id="btn1">Order</button>
+<button id="btn1" onclick="openForm()">Order</button>
 </div>
 `
     document.querySelector('#meal-list').appendChild(meal)
@@ -68,4 +68,12 @@ function orderNow() {
         get.reset();
     })
 
+}
+
+function openForm() {
+    document.getElementById("order").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("order").style.display = "none";
 }

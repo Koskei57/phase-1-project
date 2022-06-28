@@ -80,7 +80,7 @@
   
   .form-box {
       width: 380px;
-      height: 400px;
+      height: 500px;
       position: relative;
       margin: 2% auto;
       background: black;
@@ -99,25 +99,24 @@
   
   .toggle-btn {
       display: flex;
-      padding: 5px 20px;
-      margin-right: 15px;
+      margin-right: 20px;
       cursor: pointer;
       background: transparent border;
       outline: none;
-      border: 0;
+      border: 1px;
       position: relative;
   }
-  
-  #btn {
+  /* #btn {
       top: 0;
       left: 0;
       position: absolute;
-      width: 110px;
+      width: 100px;
       height: 100%;
       background: #F3C693;
-      border-radius: 30px;
+      border-radius: 3px;
       transition: .5s;
   }
+   */
   
   .input-group-login {
       top: 150px;
@@ -227,6 +226,58 @@
       border-radius: 8px;
       border-width: 2px;
       cursor: pointer;
+  }
+  /*Style the order form */
+  
+  .getOrder {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+  }
+  
+  .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: gray;
+  }
+  
+  .form-container input[type=text],
+  .form-container input[type=submit] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: whitesmoke;
+  }
+  /* .form-container input[type=text]:focus,
+  .form-container input[type=submit]:focus {
+      background-color: #ddd;
+      outline: none;
+  }
+   */
+  
+  .btn {
+      background-color: #FCB500;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 50%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+      background-color: yellow;
+      padding: 5px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      width: 30%;
+      margin-left: 50px;
   }
   
   .Footer {
