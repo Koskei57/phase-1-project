@@ -1,14 +1,13 @@
 const log = document.getElementById('login');
 const sign = document.getElementById('register');
 const btn = document.getElementById('btn');
-const food = document.getElementById('about-pic');
-const image = document.getElementById('pic1');
 const price = document.getElementById('butn');
+
 
 document.addEventListener('DOMContentLoaded', (e) => {
         document.addEventListener('submit', e => {
             e.preventDefault()
-            getFood(e.target)
+            getFood(e.target.submit)
         })
     })
     //style the login button
@@ -59,11 +58,11 @@ function initialize() {
 initialize()
 
 function orderNow() {
-    let order = document.getElementById()
-    let get = document.querySelector()
+    let order = document.getElementById("btn1")
+    let get = document.querySelector("meals")
     get.addEventListener('click', function(event) {
         event.preventDefault();
-        let card = document.getElementById('')
+        let card = document.getElementById('btn')
         card.innerHTML = "Your order has been received"
         get.reset();
     })
